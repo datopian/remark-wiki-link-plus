@@ -12,7 +12,12 @@ Using obsidian, when we type in wiki link syntax for eg. `[[wiki_link]]` it woul
 - [x] Support `[[Internal link|With custom text]]`
 - [x] Support `[[Internal link#heading]]`
 - [x] Support `[[Internal link#heading|With custom text]]`
-- [x] Support `![[Image.png]]` (png|jpg|jpeg)
+- [x] Support `![[Image.png]]`
+  - supported formats included are jpg, jpeg, png, apng, webp, gif, svg, bmp, ico
+- [x] Support `![[Document.pdf]]
+
+> Note: if unspported image format is provided (eg. `![[Image.xyz]]`) a display warning is rendered instead as below:
+> `Document type XYZ is not yet supported for transclusions`
 
 Future support:
 - [ ] Support `![[Embed note]]`
@@ -53,12 +58,22 @@ npm run test
 ```
 
 # Change Log
- 
+
+## [1.1.0] - 2022-08-11
+
+### Added
+
+- Add support for more image formats
+  - apng, webp, gif, svg, bmp, ico
+- Add support for PDF documents
+- Add warning for unsupported image formats
+
 ## [1.0.2] - 2022-08-11
  
 ### Added
 
-- Add support for transclusion links / image links (png|jpg|jpeg) `![[Image.png]]
+- Add support for transclusion links / image links
+ - png, jpg, jpeg
  
 ## [1.0.1] - 2022-08-04
 
