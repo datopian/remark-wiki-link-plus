@@ -1,3 +1,5 @@
+🛑 This repository has been merged into [Flowershow monorepo](https://github.com/flowershow/flowershow).
+
 # remark-wiki-link-plus
 
 Parse and render wiki-style links in markdown especially Obsidian style links.
